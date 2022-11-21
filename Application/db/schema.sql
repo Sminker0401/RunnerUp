@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS runnerup_db;
+CREATE DATABASE runnerup_db;
