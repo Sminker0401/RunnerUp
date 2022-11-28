@@ -11,3 +11,4 @@ Entry.belongsTo(User, {
 });
 
 module.exports = { User, Entry };
+
