@@ -7,3 +7,13 @@ const apiRoutes = require('./api');
 router.use('/api', apiRoutes);
 
 module.exports = router;
+
+const Handlebars = require("handlebars");
+const template = Handlebars.compile("Name: {{name}}");
+console.log(template({ name: "Nils"}));
+
+var source = document.getElementById("entry-template").innerHTML;
+var template = Handlebars.compile(source);
+
+var context = { title: "My New Post", body: "This is my first post!" };
+var html = template(context);
