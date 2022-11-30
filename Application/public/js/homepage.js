@@ -1,6 +1,7 @@
 const submitButton = document.getElementById('submit-button');
 const goal = document.getElementById("goal");
 
+displayResults();
 
 const listResults = (data) => {
 
@@ -11,12 +12,13 @@ const listResults = (data) => {
     }
 
     for (let i = 0; i < data.length; i++) {
-
+    
+    let date = moment(data[i].date_created).format("MM-DD-YYYY") 
     let activity = data[i].activity;
     let duration = data[i].duration;
     let entry = document.createElement('h2')
     
-    entry.textContent = `Activity: ${activity} Duration: ${duration} minutes`;
+    entry.textContent = `${date} Activity: ${activity} Duration: ${duration} minutes`;
     goalList.appendChild(entry)
     }
 }
