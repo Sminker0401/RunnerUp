@@ -13,7 +13,7 @@ loginButton.addEventListener('click', async function (event) {
 
     const response = await fetch('/api/users/', {
       method: 'POST',
-      body: JSON.stringify({ username, email, password }),
+      body: JSON.stringify({ name:username, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 

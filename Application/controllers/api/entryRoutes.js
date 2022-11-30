@@ -8,9 +8,21 @@ router.post('/', async (req, res) => {
     //   user_id: req.session.user_id,
     });
 
-    res.status(200).json(newEntry);
+    // res.status(200).json(newEntry);
+    res.json(newEntry.get({
+      plain: true
+    }));
   } catch (err) {
     res.status(400).json(err);
+  }
+});
+
+router.get('/', async (req, res) => {
+  try {
+    const entryData = await Entry.findAll();
+    res.status(200).json(entryData);
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 
