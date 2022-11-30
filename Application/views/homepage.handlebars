@@ -1,27 +1,18 @@
-<body>
+<section class="submit-area">
+    <div class="container">
+        <label for="activity"><b>Activity</b></label>
+        <input id="activity" type="text" placeholder="Enter activity" name="activity"/>
 
-    <section class="submit-area">
-        <form>
-            <label id="goal">New Goal: </label>
-            <input id="goal" type="text" />
-            
-            <button> Submit </button>
-        </form>
+        <label for="duration"><b>Duration</b></label>
+        <input id="duration" type="text" placeholder="Enter duration" name="duration"/>
 
-      </section>
+        <button id="submit-button" type="submit">Submit</button>
+    </div>
 
-      <section class="content-area">
-        <ul id="goalList">
-        </ul>
-      </section>
+</section>
 
-    <script src="./Application/models/index.js"></script>
-    <script id="entry-template" type="text/x-handlebars-template">
-        <div class="entry">
-            <h1>{{Title}}</h1>
-            <div class="body">
-                {{body}}
-            </div>
-        </div>
-    </script>
-</body>
+<section class="content-area">
+    <ul id="entryList">
+    </ul>
+</section>
+<script src="./js/homepage.js"></script>
