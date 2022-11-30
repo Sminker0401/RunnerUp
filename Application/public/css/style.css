@@ -5,6 +5,7 @@
   
   body {
     background-color: rgb(125, 225, 255);
+    background-image: url("/Application/public/img/istockphoto-1000893148-612x612-removebg-preview.png");
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
