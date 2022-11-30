@@ -1,0 +1,27 @@
+<body>
+
+    <section class="submit-area">
+        <form>
+            <label id="goal">New Goal: </label>
+            <input id="goal" type="text" />
+            
+            <button> Submit </button>
+        </form>
+
+      </section>
+
+      <section class="content-area">
+        <ul id="goalList">
+        </ul>
+      </section>
+
+    <script src="./Application/models/index.js"></script>
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+            <h1>{{Title}}</h1>
+            <div class="body">
+                {{body}}
+            </div>
+        </div>
+    </script>
+</body>
