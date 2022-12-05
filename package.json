@@ -14,6 +14,9 @@
 
    "engines": {
     "node": "16.x"
+  },
+  "scipts": {
+    "heroku-postbuild": "node seeds/seed.js"
   }
 
 }
