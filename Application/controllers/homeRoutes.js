@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Entry, User } = require('../models');
-// const withAuth = require('../utils/auth');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
     }
   });
 
-  router.get('/homepage', async (req, res) => {
+  router.get('/homepage', withAuth, async (req, res) => {
     try {
     //   const projectData = await Project.findAll({
     //     include: [

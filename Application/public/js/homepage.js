@@ -1,4 +1,5 @@
 const submitButton = document.getElementById('submit-button');
+const logoutButton = document.getElementById('logout-button');
 const goal = document.getElementById("goal");
 
 displayResults();
@@ -52,4 +53,9 @@ submitButton.addEventListener('click', async function (event) {
     } else {
         alert(response.statusText);
     }
+})
+
+logoutButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.location.replace('/');
 })
