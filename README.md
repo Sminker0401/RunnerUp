@@ -12,4 +12,5 @@ https://fathomless-savannah-04535.herokuapp.com/
 
 https://github.com/Sminker0401/RunnerUp
 
-! [live site](/Application/utils/images)
+! [live site](/images/live.png)
+! [second page](/images/live2.png)
