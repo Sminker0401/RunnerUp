@@ -16,7 +16,8 @@
     "node": "16.x"
   },
   "scipts": {
-    "heroku-postbuild": "node seeds/seed.js"
+    "heroku-postbuild": "node seeds/seed.js",
+    "start": "node server.js"
   }
 
 }
