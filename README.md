@@ -6,3 +6,7 @@ This app was created to help users who want to keep track of their physical acti
 ## Credits
 
 Collaborators: Eric Marcy, Timothy Mardis, Stephanie Minker, John Williams
+
+
+https://fathomless-savannah-04535.herokuapp.com/
+
