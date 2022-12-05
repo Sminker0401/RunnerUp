@@ -1,4 +1,5 @@
 const submitButton = document.getElementById('submit-button');
+const logoutButton = document.getElementById('logout-button');
 const goal = document.getElementById("goal");
 
 displayResults();
@@ -13,7 +14,7 @@ const listResults = (data) => {
 
     for (let i = 0; i < data.length; i++) {
     
-    let date = moment(data[i].date_created).format("MM-DD-YYYY") 
+    let date = moment(data[i].date_created).format("MM-DD-YYYY")
     let activity = data[i].activity;
     let duration = data[i].duration;
     let entry = document.createElement('h2')
@@ -52,4 +53,9 @@ submitButton.addEventListener('click', async function (event) {
     } else {
         alert(response.statusText);
     }
+})
+
+logoutButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.location.replace('/');
 })
